@@ -1,4 +1,4 @@
-package com.sachin.CoreJava;
+package com.sachin.Generics;
 
 class GenericsJava<T, U>
 {

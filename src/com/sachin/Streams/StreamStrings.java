@@ -1,4 +1,4 @@
-package com.sachin.streams;
+package com.sachin.Streams;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
