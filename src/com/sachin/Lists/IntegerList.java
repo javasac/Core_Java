@@ -1,5 +1,6 @@
 package com.sachin.Lists;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class IntegerList
@@ -8,19 +9,25 @@ public class IntegerList
 
     public IntegerList()
     {
-        li.add(1);
-        li.add(2);
-        li.add(3);
-        li.add(4);
-        li.add(5);
+        li.add(174);
+        li.add(26);
+        li.add(23);
+        li.add(46);
+        li.add(512);
     }
 
     void printAdd()
     {
         System.out.println(li);
-        List<Integer> lis = List.of(10, 21, 32, 411, 522);
+
+        List<Integer> lis = List.of(1, 261, 32, 411, 522);
         li.remove(4);
+
+        // add local Integer List to
         li.addAll(lis);
+        System.out.println(li);
+
+        Collections.sort(li);
         System.out.println(li);
     }
 
