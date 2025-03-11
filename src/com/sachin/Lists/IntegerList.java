@@ -1,5 +1,6 @@
 package com.sachin.Lists;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -14,6 +15,11 @@ public class IntegerList
         li.add(23);
         li.add(46);
         li.add(512);
+    }
+
+    void convertArray()
+    {
+        int arr[] = li.stream().mapToInt(Integer::intValue).toArray();
     }
 
     void printAdd()
