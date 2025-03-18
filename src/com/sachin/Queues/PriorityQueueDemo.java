@@ -3,7 +3,8 @@ import java.util.PriorityQueue;
 
 class PriorityQueueDemo
 {
-    PriorityQueue<Employee> pq = new PriorityQueue<>(new SalaryEmpCompare());
+    //PriorityQueue<Employee> pq = new PriorityQueue<>(new SalaryEmpCompare());
+    PriorityQueue<Employee> pq = new PriorityQueue<>((a, b) -> b.getSalary() - a.getSalary());
 
     PriorityQueueDemo()
     {

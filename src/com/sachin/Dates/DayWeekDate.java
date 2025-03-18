@@ -1,6 +1,6 @@
 package com.sachin.Dates;
 import java.time.LocalDate;
-import java.util.GregorianCalendar;
+import java.time.format.DateTimeFormatter;
 
 class DayWeekDate
 {
@@ -18,21 +18,16 @@ class DayWeekDate
     void getWeekfromDay()
     {
         LocalDate ld = LocalDate.of(this.year, this.month, this.day);
-        System.out.println("Date is " + ld.toString());
-        System.out.println("Day is " + ld.getDayOfWeek());
-    }
+        DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        String formattedDate = ld.format(dateFormatter);
 
-    void GregorianCal()
-    {
-        GregorianCalendar gc = new GregorianCalendar(this.year, this.month, this.day);
-        System.out.println("Date is " + gc.getGregorianChange());
-        System.out.println("Weeks in year are " + gc.getWeeksInWeekYear());
+        System.out.println("Date is " + formattedDate);
+        System.out.println("Day is " + ld.getDayOfWeek());
     }
 
     public static void main(String[] args)
     {
-        DayWeekDate dw = new DayWeekDate(31, 1, 2002);
+        DayWeekDate dw = new DayWeekDate(1, 1, 2000);
         dw.getWeekfromDay();
-        //dw.GregorianCal();
     }
 }
