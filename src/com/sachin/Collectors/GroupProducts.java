@@ -19,6 +19,7 @@ public class GroupProducts
 
         Stream<Product> str = lt.stream();
         Map<String, List<Product>> map = str.collect(Collectors.groupingBy(Product::getCategory));
+
         System.out.println(map);
     }
 }
