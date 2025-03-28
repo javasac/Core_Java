@@ -1,6 +1,6 @@
 package com.sachin.Enums;
 
-public class LevelEnumClass
+class LevelEnumClass
 {
     public static void main(String[] args)
     {

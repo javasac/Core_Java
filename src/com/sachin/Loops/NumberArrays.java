@@ -19,6 +19,7 @@ public class NumberArrays
     {
         System.out.println();
         System.out.println("============Iterator===============");
+
         IntStream st = Arrays.stream(arr);
         Iterator it = st.iterator();
 

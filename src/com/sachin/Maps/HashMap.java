@@ -15,7 +15,7 @@ public class HashMap
 
     void printForEach()
     {
-        hm.forEach((key, value) -> System.out.print(key + " = " + value));
+        hm.forEach((key, value) -> System.out.print(key + " = " + value + ", "));
     }
 
     void printKeySet()

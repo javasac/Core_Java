@@ -1,5 +1,6 @@
 package com.sachin.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 class ArrayListConvert
@@ -18,10 +19,12 @@ class ArrayListConvert
     void convert()
     {
         int arr[] = l.stream().mapToInt(Integer::intValue).toArray();
+        Arrays.stream(arr).forEach(System.out::println);
     }
 
     public static void main(String[] args)
     {
         ArrayListConvert ac = new ArrayListConvert();
+        ac.convert();
     }
 }
