@@ -2,6 +2,7 @@ package com.sachin.Collectors;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,9 +18,10 @@ public class GroupProducts
                 new Product("BMW i5", "Car")
         );
 
-        Stream<Product> str = lt.stream();
-        Map<String, List<Product>> map = str.collect(Collectors.groupingBy(Product::getCategory));
+        //Stream<Product> str = lt.stream();
+        //Map<String, List<Product>> map = str.collect(Collectors.groupingBy(Product::getCategory));
 
+        Map<String, List<Product>> map = lt.stream().collect(Collectors.groupingBy(Product::getCategory));
         System.out.println(map);
     }
 }

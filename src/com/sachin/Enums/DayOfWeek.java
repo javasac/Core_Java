@@ -28,9 +28,7 @@ public enum DayOfWeek
     {
         for (DayOfWeek day : DayOfWeek.values())
         {
-            System.out.println(day + ": " + day.getDayNumber());
+            System.out.println(day + " = " + day.getDayNumber());
         }
     }
 }
-
-

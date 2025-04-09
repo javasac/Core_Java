@@ -11,7 +11,6 @@ public class LinkedHashMap_Demo
         map.put("Apple", 6);
         map.put("Guava", 9);
         map.put("Orange", 1);
-
         map.get("Guava");
     }
 
