@@ -23,7 +23,7 @@ class SortCustom
             @Override
             public int compare(Integer i, Integer j)
             {
-                if (j%10 > i%10)
+                if (j > i)
                 {
                     return 1;
                 }

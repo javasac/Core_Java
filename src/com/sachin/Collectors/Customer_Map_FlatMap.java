@@ -23,6 +23,7 @@ public class Customer_Map_FlatMap
         List<Customer> cust = cmf.getCustomers();
 
         List<String> emails = cust.stream().map(c -> c.getEmail()).collect(Collectors.toList());
+
         System.out.println(emails);
 
         System.out.println(cust.stream().map(c -> c.getPhones()).collect(Collectors.toList()));

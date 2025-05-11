@@ -6,7 +6,7 @@ public class GenericMethod
     {
         for (T ele : arr)
         {
-            System.out.println(ele);
+            System.out.print(ele + " ");
         }
         System.out.println();
     }
@@ -16,9 +16,11 @@ public class GenericMethod
         Integer[] intArr = {1, 2, 3};
         Double[] douArr = {14d, 24d, 37d};
         Character[] charArr = {'S', 'A', 'C'};
+        String[] str = {"Sachin", "Nitin", "Nidhi"};
 
         printArray(intArr);
         printArray(charArr);
         printArray(douArr);
+        printArray(str);
     }
 }

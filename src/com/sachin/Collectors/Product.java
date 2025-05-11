@@ -12,7 +12,8 @@ class Product
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Product{" +
                 "name='" + name + '\'' +
                 ", category='" + category + '\'' +

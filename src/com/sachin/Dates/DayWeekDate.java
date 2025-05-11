@@ -22,7 +22,7 @@ class DayWeekDate
         String formattedDate = ld.format(dateFormatter);
 
         System.out.println("Date is " + formattedDate);
-        System.out.println("Day is " + ld.getDayOfWeek());
+        System.out.println("Day  is " + ld.getDayOfWeek());
     }
 
     public static void main(String[] args)

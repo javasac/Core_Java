@@ -1,9 +1,11 @@
 package com.sachin.Lists;
-import java.util.List;
+import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 class CopyOnWriteArrayList_Demo
 {
+    // Exception in thread "main" java.util.ConcurrentModificationException
+    //ArrayList<Integer> ls = new ArrayList<>();
     CopyOnWriteArrayList<Integer> ls = new CopyOnWriteArrayList<>();
 
     CopyOnWriteArrayList_Demo()

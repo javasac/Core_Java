@@ -9,7 +9,6 @@ class Student implements Comparable<Student>
     @Override
     public int compareTo(Student stud)
     {
-        //return Double.compare(stud.getGpa(), this.getGpa());
         return Double.compare(this.getGpa(), stud.getGpa());
     }
 

@@ -45,7 +45,7 @@ public class HashEquals
     public static void main(String args[])
     {
         HashEquals s1 = new HashEquals("Sachin", 25);
-        HashEquals s2 = new HashEquals("Sachin", 25);
+        HashEquals s2 = new HashEquals("Sachin", 28);
 
         if (s1.equals(s2))
         {

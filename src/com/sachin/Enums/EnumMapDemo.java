@@ -12,6 +12,7 @@ public class EnumMapDemo
         map.put(DayOfWeek.MONDAY, "Office");
 
         System.out.println(map.get(DayOfWeek.MONDAY));
+
         System.out.println(map);
     }
 }

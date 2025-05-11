@@ -17,6 +17,7 @@ class NumberOrder
 
     void printOrder()
     {
+        System.out.println(ls);
         ls.sort(new NumberCompare());
         System.out.println(ls);
     }

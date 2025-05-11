@@ -18,7 +18,7 @@ class ArrayListConvert
 
     void convert()
     {
-        int arr[] = l.stream().mapToInt(Integer::intValue).toArray();
+        int[] arr = l.stream().mapToInt(Integer::intValue).toArray();
         Arrays.stream(arr).forEach(System.out::println);
     }
 
