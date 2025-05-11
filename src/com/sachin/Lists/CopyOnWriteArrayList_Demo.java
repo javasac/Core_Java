@@ -1,5 +1,4 @@
 package com.sachin.Lists;
-import java.util.ArrayList;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 class CopyOnWriteArrayList_Demo
@@ -21,13 +20,7 @@ class CopyOnWriteArrayList_Demo
     {
         System.out.println(ls);
 
-        for (Integer i : ls)
-        {
-            if (i % 2 == 0)
-            {
-                ls.remove(i);
-            }
-        }
+        ls.removeIf(i -> i % 2 == 0);
 
         System.out.println(ls);
     }
