@@ -12,6 +12,7 @@ class PriorityQueueDemo
         pq.add(new Employee(500, "Rohit"));
         pq.add(new Employee(700, "Sachin"));
         pq.add(new Employee(100, "Rahul"));
+        pq.add(new Employee(777, "Kapil Dev"));
     }
 
     void printPQ()

@@ -27,10 +27,18 @@ class Student implements Comparable<Student>
         return Objects.hash(name, gpa);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public boolean equals(Object o)
     {
-        Student stud = new Student();
+        Student stud;
 
         if ((o==null) || (getClass()!=o.getClass()))
         {
@@ -44,23 +52,8 @@ class Student implements Comparable<Student>
         {
             stud = (Student) o;
 
-            if (stud.getGpa()==this.getGpa() && stud.getName().equals(this.getName()))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return (stud.getGpa()==this.getGpa() && stud.getName().equals(this.getName())) ? true : false;
         }
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public double getGpa() {

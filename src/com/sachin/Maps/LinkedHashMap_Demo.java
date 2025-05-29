@@ -24,7 +24,7 @@ public class LinkedHashMap_Demo
 
     void printLinked()
     {
-        map.forEach((key, value) -> System.out.println("Key = " + key + " & Value = " + value));
+        map.forEach((k, v) -> System.out.println("Key = " + k + " & Value = " + v));
     }
 
     void printKeySet()

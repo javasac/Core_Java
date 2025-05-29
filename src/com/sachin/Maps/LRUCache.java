@@ -40,6 +40,7 @@ class LRUCache
         LRUCache lru = new LRUCache(2);
         lru.put(1, 10);
         lru.put(2, 20);
+        lru.printMap();
 
         System.out.println(lru.get(2));
         lru.printMap();

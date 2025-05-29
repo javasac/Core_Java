@@ -21,7 +21,6 @@ public class Customer_Map_FlatMap
     {
         Customer_Map_FlatMap cmf = new Customer_Map_FlatMap();
         List<Customer> cust = cmf.getCustomers();
-
         List<String> emails = cust.stream().map(c -> c.getEmail()).collect(Collectors.toList());
 
         System.out.println(emails);

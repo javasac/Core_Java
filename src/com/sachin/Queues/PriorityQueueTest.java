@@ -4,6 +4,7 @@ import java.util.*;
 public class PriorityQueueTest
 {
     PriorityQueue<Integer> pq = new PriorityQueue<>();
+
     public PriorityQueueTest()
     {
         pq.add(60);
@@ -17,11 +18,13 @@ public class PriorityQueueTest
     void printPQ()
     {
         System.out.println("=====Print All Values=====");
+
         Iterator<Integer> it = pq.iterator();
         while (it.hasNext())
         {
             System.out.println(it.next());
         }
+
         System.out.println("=====Print All Values=====");
     }
 
@@ -38,7 +41,8 @@ public class PriorityQueueTest
     void orderPrint()
     {
         List<Integer> li = new ArrayList<>(pq);
-        //Collections.sort(li);
+        System.out.println(li);
+
         Collections.sort(li, Collections.reverseOrder());
 
         System.out.println(li);

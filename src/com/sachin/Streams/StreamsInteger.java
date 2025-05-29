@@ -16,7 +16,7 @@ public class StreamsInteger
         IntStream.range(1, 5).forEach(System.out::println);
 
         // print sum of all numbers from 1 to 10
-        System.out.println("Sum all numbers from 1 to 10 " + IntStream.range(1, 10).sum());
+        System.out.println("Sum all numbers from 1 to 10 = " + IntStream.range(1, 10).sum());
 
         // least number in Array is
         int[] arr = new int[] {5232, 67, 876, 4, -5};
@@ -24,5 +24,8 @@ public class StreamsInteger
 
         // skip first n number in list
         IntStream.range(1, 10).skip(3).forEach(System.out::println);
+
+        int arr1[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println(Arrays.stream(arr1).filter(n -> n % 2==0).sum());
     }
 }

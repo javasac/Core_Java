@@ -8,8 +8,10 @@ public class StreamAnyMatch
 
     void anymatch()
     {
-        boolean flag = fruits.stream().anyMatch(f -> f.startsWith("P"));
+        boolean flag = fruits.stream().anyMatch(f -> f.startsWith("A"));
+
         System.out.println("Fruit starting with P are present " + flag);
+
         fruits.forEach(i -> System.out.println(i.toUpperCase()));
     }
 
