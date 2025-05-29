@@ -14,7 +14,7 @@ public class HashEquals
     @Override
     public boolean equals(Object o)
     {
-        if (o==this)
+        if (o == this)
         {
             return true;
         }
@@ -24,15 +24,7 @@ public class HashEquals
         }
 
         HashEquals he = (HashEquals)o;
-
-        if ((this.age==he.age) && (this.name==he.name))
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return ((this.age==he.age) && (this.name.equals(he.name))) ? true : false;
     }
 
     @Override
@@ -45,7 +37,7 @@ public class HashEquals
     public static void main(String args[])
     {
         HashEquals s1 = new HashEquals("Sachin", 25);
-        HashEquals s2 = new HashEquals("Sachin", 28);
+        HashEquals s2 = new HashEquals("Sachin", 25);
 
         if (s1.equals(s2))
         {

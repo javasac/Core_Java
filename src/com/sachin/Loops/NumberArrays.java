@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-public class NumberArrays
+public class  NumberArrays
 {
     int arr[] = {10, 20, 25, 30, 35, 40};
 

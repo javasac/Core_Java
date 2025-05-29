@@ -18,7 +18,7 @@ public class StreamStrings
         System.out.println(ups);
 
         // join strings
-        System.out.println(names.stream().collect(Collectors.joining(", ")));
+        System.out.println(names.stream().collect(Collectors.joining(" | ")));
 
         // Checking if Any String Matches a Condition
         boolean hasA = names.stream().anyMatch(name -> name.startsWith("A"));

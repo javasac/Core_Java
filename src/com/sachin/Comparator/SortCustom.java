@@ -1,6 +1,5 @@
 package com.sachin.Comparator;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -23,19 +22,11 @@ class SortCustom
             @Override
             public int compare(Integer i, Integer j)
             {
-                if (j > i)
-                {
-                    return 1;
-                }
-                else
-                {
-                    return -1;
-                }
+                return (j > i) ? 1 : -1;
             }
         };
 
-        Collections.sort(lt, com);
-
+        lt.sort(com);
         System.out.println(lt);
     }
 }
